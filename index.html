@@ -13,10 +13,10 @@
     />
   </head>
   <body class="min-h-screen bg-[#fbf9f5] text-slate-900 [font-family:Poppins,sans-serif]">
-    <main class="mx-auto flex min-h-screen max-w-[1280px] flex-col px-4 pb-0 pt-4 sm:px-6 lg:px-8">
-      <header class="flex items-center justify-between gap-4 py-2">
+    <main class="mx-auto flex min-h-screen max-w-[1280px] flex-col px-4 pb-0 pt-4 max-sm:px-3 max-sm:pt-3 sm:px-6 lg:px-8">
+      <header class="flex items-center justify-between gap-4 py-2 max-sm:gap-3">
         <a href="#" class="shrink-0">
-          <img src="images/Logo Here.svg" alt="Logo Here" class="h-8 w-auto sm:h-9" />
+          <img src="images/Logo Here.svg" alt="Logo Here" class="h-8 w-auto max-sm:h-6 sm:h-9" />
         </a>
 
         <nav class="hidden items-center gap-7 text-sm font-medium text-slate-700 lg:flex">
@@ -33,7 +33,7 @@
           <a href="#" class="text-[#efb43c] transition hover:text-[#e2a61a]">Contact</a>
         </nav>
 
-        <div class="flex items-center gap-4 text-slate-700">
+        <div class="hidden items-center gap-4 text-slate-700 lg:flex">
           <button
             type="button"
             aria-label="Profile"
@@ -57,22 +57,34 @@
             </svg>
           </button>
         </div>
+
+        <button
+          type="button"
+          aria-label="Open menu"
+          class="grid h-7 w-7 place-items-center text-slate-700 lg:hidden"
+        >
+          <svg viewBox="0 0 24 24" class="h-6 w-6 fill-none stroke-current stroke-[1.8]" aria-hidden="true">
+            <path d="M4 7h16" stroke-linecap="round" />
+            <path d="M4 12h16" stroke-linecap="round" />
+            <path d="M4 17h16" stroke-linecap="round" />
+          </svg>
+        </button>
       </header>
 
-      <section class="pt-14 text-center sm:pt-16">
-        <h1 class="text-3xl font-extrabold tracking-[-0.03em] text-[#efb43c] sm:text-4xl lg:text-[3.1rem]">
+      <section class="pt-14 text-center max-sm:pt-8 sm:pt-16">
+        <h1 class="text-3xl font-extrabold tracking-[-0.03em] text-[#efb43c] max-sm:text-[28px] sm:text-4xl lg:text-[3.1rem]">
           Contact Us
         </h1>
-        <p class="mt-3 text-sm font-medium text-slate-500 sm:text-base">
+        <p class="mt-3 text-sm font-medium text-slate-500 max-sm:mt-2 max-sm:text-[13px] max-sm:leading-5 sm:text-base">
           Any question or remarks? Just write us a message!
         </p>
       </section>
 
-      <section class="pt-12">
+      <section class="pt-12 max-sm:pt-8">
         <div class="overflow-hidden rounded-[10px] bg-white shadow-[0_30px_80px_rgba(15,23,42,0.12)]">
-          <div class="grid lg:grid-cols-[390px_1fr]">
-            <aside class="relative min-h-[420px] overflow-hidden bg-[#081c2b] px-6 py-8 text-white sm:min-h-[520px] sm:px-9">
-              <div class="relative z-10">
+          <div class="grid lg:grid-cols-[460px_1fr]">
+            <aside class="relative min-h-[420px] overflow-hidden bg-[#081c2b] px-6 py-8 text-white sm:px-9 lg:m-2 lg:rounded-[8px] lg:border-0">
+              <div class="relative z-10 hidden sm:block">
                 <h2 class="text-[26px] font-bold tracking-[-0.03em] text-white">
                   Contact Information
                 </h2>
@@ -81,7 +93,7 @@
                 </p>
               </div>
 
-              <div class="relative z-10 mt-14 space-y-8 sm:mt-20">
+              <div class="relative z-10 mt-14 hidden space-y-8 sm:block">
                 <div class="flex items-start gap-4">
                   <img src="images/Vector(4).png" alt="" class="mt-0.5 h-5 w-5 shrink-0 brightness-[2.2]" />
                   <p class="pt-0.5 text-[14px] leading-6 text-white/92">+1012 3456 789</p>
@@ -100,7 +112,7 @@
                 </div>
               </div>
 
-              <div class="absolute bottom-6 left-6 z-10 flex items-center gap-4 sm:left-8">
+              <div class="absolute bottom-10 left-6 z-10 hidden items-center gap-4 sm:flex">
                 <a
                   href="#"
                   aria-label="Twitter"
@@ -124,95 +136,151 @@
                 </a>
               </div>
 
+              <div class="max-sm:relative max-sm:z-10 max-sm:rounded-[4px] max-sm:p-2.5 sm:hidden">
+                <div class="max-sm:rounded-[4px] max-sm:px-3 max-sm:py-4 max-sm:text-center">
+                  <h2 class="text-[18px] font-bold tracking-[-0.03em] text-white">
+                    Contact Information
+                  </h2>
+                  <p class="mt-2 text-[12px] leading-6 text-white/72">
+                    Say something to start a live chat!
+                  </p>
+
+                  <div class="mt-5 space-y-5 text-center">
+                    <div class="flex flex-col items-center gap-2">
+                      <img src="images/Vector(4).png" alt="" class="h-4 w-4 shrink-0 brightness-[2.2]" />
+                      <p class="pt-0.5 text-[12px] leading-6 text-white/92">+1012 3456 789</p>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2">
+                      <img src="images/Vector (1).png" alt="" class="h-4 w-4 shrink-0 brightness-[2.2]" />
+                      <p class="pt-0.5 text-[12px] leading-6 text-white/92">demo@gmail.com</p>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-2">
+                      <img src="images/Vector (2).png" alt="" class="h-4 w-4 shrink-0 brightness-[2.2]" />
+                      <p class="max-w-[220px] pt-0.5 text-[12px] leading-6 text-white/92">
+                        132 Dartmouth Street Boston, Massachusetts 02156 United States
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-6 flex items-center justify-center gap-3">
+                    <a
+                      href="#"
+                      aria-label="Twitter"
+                      class="grid h-7 w-7 place-items-center rounded-full bg-[#efb43c] transition hover:scale-105"
+                    >
+                      <img src="images/Group 1000001749.png" alt="" class="h-7 w-7" />
+                    </a>
+                    <a
+                      href="#"
+                      aria-label="Instagram"
+                      class="grid h-7 w-7 place-items-center rounded-full bg-white transition hover:scale-105"
+                    >
+                      <img src="images/Group 1000001750.png" alt="" class="h-7 w-7" />
+                    </a>
+                    <a
+                      href="#"
+                      aria-label="Discord"
+                      class="grid h-7 w-7 place-items-center rounded-full bg-[#efb43c] transition hover:scale-105"
+                    >
+                      <img src="images/Group 1000001751.png" alt="" class="h-7 w-7" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
               <img
                 src="images/Ellipse 793.png"
                 alt=""
-                class="pointer-events-none absolute bottom-0 right-0 h-[146px] w-[146px] opacity-55"
+                class="pointer-events-none absolute bottom-0 right-0 h-[126px] w-[126px] opacity-55 max-sm:bottom-[-8px] max-sm:right-[-18px] max-sm:h-[88px] max-sm:w-[88px] max-sm:opacity-45 sm:h-[146px] sm:w-[146px]"
               />
               <img
                 src="images/Ellipse 794.png"
                 alt=""
-                class="pointer-events-none absolute bottom-12 right-16 h-[118px] w-[118px] opacity-45"
+                class="pointer-events-none absolute bottom-10 right-12 h-[98px] w-[98px] opacity-45 max-sm:bottom-[24px] max-sm:right-[22px] max-sm:h-[62px] max-sm:w-[62px] max-sm:opacity-35 sm:bottom-12 sm:right-16 sm:h-[118px] sm:w-[118px]"
               />
             </aside>
 
-            <div class="relative px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
-              <form class="relative min-h-[420px] pb-14 sm:min-h-[460px] sm:pb-16" data-contact-form novalidate>
+            <div class="relative px-6 py-8 max-sm:px-4 max-sm:py-2 sm:px-8 lg:px-10 lg:py-10">
+              <form class="relative pb-4 max-sm:pb-2 sm:min-h-[460px] sm:pb-16" data-contact-form novalidate>
 
-                <div class="grid gap-6 md:grid-cols-2 md:gap-x-12 md:gap-y-10">
+                <div class="grid gap-6 max-sm:gap-4 md:grid-cols-2 md:gap-x-12 md:gap-y-10">
                   <label class="block">
-                    <span class="text-[11px] font-medium text-slate-500">First Name</span>
+                    <span class="text-[11px] font-medium text-slate-500 max-sm:text-[10px]">First Name</span>
                     <input
                       data-field="firstName"
                       required
                       type="text"
                       placeholder="First Name"
-                      class="mt-1 w-full border-0 border-b border-slate-300 bg-transparent px-0 py-2 text-[13px] outline-none transition placeholder:text-slate-300 focus:border-[#081c2b]"
+                      class="mt-1 w-full border-0 border-b border-slate-300 bg-transparent px-0 py-2 text-[13px] outline-none transition placeholder:text-slate-300 focus:border-[#081c2b] max-sm:py-1.5 max-sm:text-[12px]"
                     />
                     <p class="hidden min-h-4 text-[11px] leading-5 text-red-500" data-error-for="firstName"></p>
                   </label>
 
                   <label class="block">
-                    <span class="text-[11px] font-medium text-slate-800">Last Name</span>
+                    <span class="text-[11px] font-medium text-slate-800 max-sm:text-[10px]">Last Name</span>
                     <input
                       data-field="lastName"
                       required
                       type="text"
                       placeholder="Last Name"
-                      class="mt-1 w-full border-0 border-b border-slate-300 bg-transparent px-0 py-2 text-[13px] outline-none transition focus:border-[#081c2b]"
+                      value="Doe"
+                      class="mt-1 w-full border-0 border-b border-slate-300 bg-transparent px-0 py-2 text-[13px] outline-none transition focus:border-[#081c2b] max-sm:py-1.5 max-sm:text-[12px]"
                     />
                     <p class="hidden min-h-4 text-[11px] leading-5 text-red-500" data-error-for="lastName"></p>
                   </label>
 
                   <label class="block">
-                    <span class="text-[11px] font-medium text-slate-500">Email</span>
+                    <span class="text-[11px] font-medium text-slate-500 max-sm:text-[10px]">Email</span>
                     <input
                       data-field="email"
                       required
                       type="email"
                       placeholder="Email"
-                      class="mt-1 w-full border-0 border-b border-slate-300 bg-transparent px-0 py-2 text-[13px] outline-none transition focus:border-[#081c2b]"
+                      class="mt-1 w-full border-0 border-b border-slate-300 bg-transparent px-0 py-2 text-[13px] outline-none transition placeholder:text-slate-300 focus:border-[#081c2b] max-sm:py-1.5 max-sm:text-[12px]"
                     />
                     <p class="hidden min-h-4 text-[11px] leading-5 text-red-500" data-error-for="email"></p>
                   </label>
 
                   <label class="block">
-                    <span class="text-[11px] font-medium text-slate-800">Phone Number</span>
+                    <span class="text-[11px] font-medium text-slate-800 max-sm:text-[10px]">Phone Number</span>
                     <input
                       data-field="phone"
                       type="text"
                       placeholder="phone number"
-                      class="mt-1 w-full border-0 border-b border-slate-300 bg-transparent px-0 py-2 text-[13px] font-semibold text-slate-900 outline-none transition placeholder:text-slate-300 focus:border-[#081c2b]"
+                      value="+1 012 3456 789"
+                      class="mt-1 w-full border-0 border-b border-slate-300 bg-transparent px-0 py-2 text-[13px] font-semibold text-slate-900 outline-none transition placeholder:text-slate-300 focus:border-[#081c2b] max-sm:py-1.5 max-sm:text-[12px]"
                     />
                     <p class="hidden min-h-4 text-[11px] leading-5 text-red-500" data-error-for="phone"></p>
                   </label>
                 </div>
 
-                <div class="mt-7 sm:mt-8">
+                <div class="mt-7 max-sm:mt-6 sm:mt-8">
                   <p class="text-[13px] font-semibold text-[#12273c]">Select Subject?</p>
-                  <div class="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4 xl:gap-5">
-                    <label class="flex items-center gap-2 text-[11px] text-slate-600">
+                  <div class="mt-5 grid gap-3 max-sm:grid-cols-2 max-sm:gap-x-4 max-sm:gap-y-3 sm:grid-cols-2 xl:grid-cols-4 xl:gap-5">
+                    <label class="flex items-center gap-2 text-[11px] text-slate-600 max-sm:text-[10px]">
                       <input type="radio" name="subject" class="peer sr-only" checked />
                       <span class="grid h-3.5 w-3.5 place-items-center rounded-full border border-slate-300 bg-white peer-checked:border-[#081c2b]">
                         <span class="h-2 w-2 rounded-full bg-[#081c2b] opacity-100 peer-checked:opacity-100"></span>
                       </span>
                       <span>General Inquiry</span>
                     </label>
-                    <label class="flex items-center gap-2 text-[11px] text-slate-600">
+                    <label class="flex items-center gap-2 text-[11px] text-slate-600 max-sm:text-[10px]">
                       <input type="radio" name="subject" class="peer sr-only" />
                       <span class="grid h-3.5 w-3.5 place-items-center rounded-full border border-slate-300 bg-white peer-checked:border-[#081c2b]">
                         <span class="h-2 w-2 rounded-full bg-[#081c2b] opacity-0 peer-checked:opacity-100"></span>
                       </span>
                       <span>General Inquiry</span>
                     </label>
-                    <label class="flex items-center gap-2 text-[11px] text-slate-600">
+                    <label class="flex items-center gap-2 text-[11px] text-slate-600 max-sm:text-[10px]">
                       <input type="radio" name="subject" class="peer sr-only" />
                       <span class="grid h-3.5 w-3.5 place-items-center rounded-full border border-slate-300 bg-white peer-checked:border-[#081c2b]">
                         <span class="h-2 w-2 rounded-full bg-[#081c2b] opacity-0 peer-checked:opacity-100"></span>
                       </span>
                       <span>General Inquiry</span>
                     </label>
-                    <label class="flex items-center gap-2 text-[11px] text-slate-600">
+                    <label class="flex items-center gap-2 text-[11px] text-slate-600 max-sm:text-[10px]">
                       <input type="radio" name="subject" class="peer sr-only" />
                       <span class="grid h-3.5 w-3.5 place-items-center rounded-full border border-slate-300 bg-white peer-checked:border-[#081c2b]">
                         <span class="h-2 w-2 rounded-full bg-[#081c2b] opacity-0 peer-checked:opacity-100"></span>
@@ -222,23 +290,23 @@
                   </div>
                 </div>
 
-                <label class="mt-7 block sm:mt-8">
-                  <span class="text-[11px] font-medium text-slate-500">Message</span>
+                <label class="mt-7 block max-sm:mt-6 sm:mt-8">
+                  <span class="text-[11px] font-medium text-slate-500 max-sm:text-[10px]">Email</span>
                   <textarea
                     data-field="message"
                     required
                     rows="1"
                     placeholder="Write your message.."
-                    class="mt-1 w-full resize-none border-0 bg-transparent px-0 py-1 text-[13px] outline-none transition placeholder:text-slate-400"
+                    class="mt-1 w-full resize-none border-0 border-b border-slate-300 bg-transparent px-0 py-1 text-[13px] outline-none transition placeholder:text-slate-400 focus:border-[#081c2b] max-sm:py-1.5 max-sm:text-[12px]"
                   ></textarea>
                   <p class="hidden min-h-4 text-[11px] leading-5 text-red-500" data-error-for="message"></p>
                 </label>
 
-                <div class="relative mt-5 border-t border-slate-300 pt-5 pb-14 sm:mt-6 sm:pt-6 sm:pb-16">
-                  <div class="flex justify-end pr-4 sm:pr-10">
+                <div class="relative mt-4 pt-4 pb-14 max-sm:pb-0 sm:mt-6 sm:pt-6 sm:pb-16">
+                  <div class="flex justify-end pr-4 max-sm:pr-0 max-sm:justify-center sm:pr-10">
                     <button
                       type="submit"
-                      class="rounded-[4px] bg-[#081c2b] px-10 py-3 text-[14px] font-medium text-white shadow-[0_10px_20px_rgba(8,28,43,0.25)] transition hover:bg-[#0e2a3f] sm:px-12"
+                      class="rounded-[4px] bg-[#081c2b] px-10 py-3 text-[14px] font-medium text-white shadow-[0_10px_20px_rgba(8,28,43,0.25)] transition hover:bg-[#0e2a3f] max-sm:w-full max-sm:px-0 sm:px-12"
                     >
                       Send Message
                     </button>
@@ -247,7 +315,7 @@
                   <img
                     src="images/letter_send 1.png"
                     alt=""
-                    class="pointer-events-none absolute left-[67%] top-[42px] z-10 hidden w-[255px] max-w-none -translate-x-1/2 opacity-80 xl:block"
+                    class="pointer-events-none mt-0 ml-10 block w-[150px] max-w-none opacity-80 sm:w-[200px] lg:absolute lg:left-[67%] lg:top-[42px] lg:mt-0 lg:ml-0 lg:w-[255px] lg:-translate-x-1/2"
                   />
                 </div>
               </form>
@@ -259,34 +327,36 @@
       <div class="h-12 sm:h-16 lg:h-20"></div>
 
       <footer class="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[#081c2b] text-white">
-        <div class="mx-auto w-full max-w-[1280px] px-4 pt-12 pb-24 sm:px-6 lg:px-8 lg:pt-16 lg:pb-28">
+        <div class="mx-auto w-full max-w-[1280px] px-4 pt-12 pb-16 sm:px-6 lg:px-8 lg:pt-16 lg:pb-28">
           <div class="flex justify-center">
-            <img src="images/Logo Here.svg" alt="Logo Here" class="h-auto w-[220px] max-w-none" />
+            <img src="images/Logo Here.svg" alt="Logo Here" class="h-auto w-[150px] max-w-none sm:w-[180px] lg:w-[220px]" />
           </div>
 
           <div class="mt-10 border-t border-white/35 pt-8">
-            <div class="grid gap-10 lg:grid-cols-[1.25fr_0.75fr_0.8fr_0.9fr_1.1fr]">
-              <div class="space-y-5">
-                <h3 class="text-lg font-semibold">Reach us</h3>
-                <div class="space-y-4 text-sm text-white/82">
+            <div class="grid grid-cols-2 gap-x-10 gap-y-12 lg:grid-cols-[1.1fr_0.75fr_0.8fr_0.9fr_1.15fr]">
+              <div class="space-y-4">
+                <h3 class="text-[20px] font-semibold tracking-[-0.02em]">Reach us</h3>
+                <div class="space-y-5 text-sm text-white/85">
                   <div class="flex items-start gap-3">
-                    <img src="images/Vector(4).png" alt="" class="mt-0.5 h-4 w-4 brightness-[2.2]" />
+                    <img src="images/Vector(4).png" alt="" class="mt-0.5 h-5 w-5 shrink-0 brightness-[2.2]" />
                     <p>+1012 3456 789</p>
                   </div>
                   <div class="flex items-start gap-3">
-                    <img src="images/Vector (1).png" alt="" class="mt-0.5 h-4 w-4 brightness-[2.2]" />
+                    <img src="images/Vector (1).png" alt="" class="mt-0.5 h-5 w-5 shrink-0 brightness-[2.2]" />
                     <p>demo@gmail.com</p>
                   </div>
                   <div class="flex items-start gap-3">
-                    <img src="images/Vector (2).png" alt="" class="mt-0.5 h-4 w-4 brightness-[2.2]" />
-                    <p class="max-w-xs">132 Dartmouth Street Boston, Massachusetts 02156 United States</p>
+                    <img src="images/Vector (2).png" alt="" class="mt-0.5 h-5 w-5 shrink-0 brightness-[2.2]" />
+                    <p class="max-w-[220px]">
+                      132 Dartmouth Street Boston, Massachusetts 02156 United States
+                    </p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h3 class="text-lg font-semibold">Company</h3>
-                <ul class="mt-5 space-y-4 text-sm text-white/82">
+                <h3 class="text-[20px] font-semibold tracking-[-0.02em]">Company</h3>
+                <ul class="mt-5 space-y-5 text-sm text-white/85">
                   <li><a href="#" class="transition hover:text-[#efb43c]">About</a></li>
                   <li><a href="#" class="transition hover:text-[#efb43c]">Contact</a></li>
                   <li><a href="#" class="transition hover:text-[#efb43c]">Blogs</a></li>
@@ -294,8 +364,8 @@
               </div>
 
               <div>
-                <h3 class="text-lg font-semibold">Legal</h3>
-                <ul class="mt-5 space-y-4 text-sm text-white/82">
+                <h3 class="text-[20px] font-semibold tracking-[-0.02em]">Legal</h3>
+                <ul class="mt-5 space-y-5 text-sm text-white/85">
                   <li><a href="#" class="transition hover:text-[#efb43c]">Privacy Policy</a></li>
                   <li><a href="#" class="transition hover:text-[#efb43c]">Terms & Services</a></li>
                   <li><a href="#" class="transition hover:text-[#efb43c]">Terms of Use</a></li>
@@ -304,16 +374,16 @@
               </div>
 
               <div>
-                <h3 class="text-lg font-semibold">Quick Links</h3>
-                <ul class="mt-5 space-y-4 text-sm text-white/82">
+                <h3 class="text-[20px] font-semibold tracking-[-0.02em]">Quick Links</h3>
+                <ul class="mt-5 space-y-5 text-sm text-white/85">
                   <li><a href="#" class="transition hover:text-[#efb43c]">Techlabz Keybox</a></li>
                   <li><a href="#" class="transition hover:text-[#efb43c]">Downloads</a></li>
                   <li><a href="#" class="transition hover:text-[#efb43c]">Forum</a></li>
                 </ul>
               </div>
 
-              <div class="rounded-[8px] bg-[#0b2637] px-4 py-4 shadow-[0_10px_25px_rgba(0,0,0,0.18)]">
-                <h3 class="text-lg font-semibold">Join Our Newsletter</h3>
+              <div class="col-span-2 rounded-[8px] bg-[#0b2637] px-4 py-4 shadow-[0_10px_25px_rgba(0,0,0,0.18)] lg:col-span-1">
+                <h3 class="text-[20px] font-semibold tracking-[-0.02em]">Join Our Newsletter</h3>
                 <div class="mt-4 flex overflow-hidden rounded-md">
                   <input
                     type="email"
